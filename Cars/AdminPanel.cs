@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cars
 {
-    public partial class MainPage : Form
+    public partial class AdminPanel : Form
     {
-        public MainPage()
+        public AdminPanel()
         {
             InitializeComponent();
         }

@@ -14,9 +14,9 @@ using System.Text.RegularExpressions;
 
 namespace Cars
 {
-    public partial class register_form : Form
+    public partial class RegisterPanel : Form
     {
-        public register_form()
+        public RegisterPanel()
         {
             InitializeComponent();
         }
@@ -140,5 +140,17 @@ namespace Cars
                 password_textbox.PasswordChar = '*'; // Hide password
             }
         }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_panel_button_Click(object sender, EventArgs e)
+        {
+            LoginPanel loginPanel = new LoginPanel();
+            loginPanel.Show();
+            this.Hide();
+        }
     }
-}// try
+}

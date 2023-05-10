@@ -1,6 +1,6 @@
 ﻿namespace Cars
 {
-    partial class MainPage
+    partial class AdminPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // MainPage
+            // AdminPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 487);
-            this.MaximizeBox = false;
-            this.Name = "MainPage";
-            this.Text = "MainPage";
+            this.ClientSize = new System.Drawing.Size(1130, 602);
+            this.Name = "AdminPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AdminPanel";
             this.ResumeLayout(false);
 
         }
