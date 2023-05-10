@@ -147,9 +147,9 @@
             this.cars_label.Location = new System.Drawing.Point(421, 11);
             this.cars_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cars_label.Name = "cars_label";
-            this.cars_label.Size = new System.Drawing.Size(321, 73);
+            this.cars_label.Size = new System.Drawing.Size(333, 73);
             this.cars_label.TabIndex = 0;
-            this.cars_label.Text = "cars.com";
+            this.cars_label.Text = "car$.com";
             this.cars_label.Click += new System.EventHandler(this.label1_Click);
             // 
             // show_checkbox

@@ -118,9 +118,9 @@
             this.carscom_label.Location = new System.Drawing.Point(421, 11);
             this.carscom_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.carscom_label.Name = "carscom_label";
-            this.carscom_label.Size = new System.Drawing.Size(321, 73);
+            this.carscom_label.Size = new System.Drawing.Size(333, 73);
             this.carscom_label.TabIndex = 6;
-            this.carscom_label.Text = "cars.com";
+            this.carscom_label.Text = "car$.com";
             // 
             // username_textboox
             // 

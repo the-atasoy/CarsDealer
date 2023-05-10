@@ -39,7 +39,7 @@
             this.MaximizeBox = false;
             this.Name = "UserPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "MainPage";
+            this.Text = "car$.com";
             this.ResumeLayout(false);
 
         }
