@@ -42,10 +42,9 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(13, 13);
-            this.logo.Margin = new System.Windows.Forms.Padding(4);
+            this.logo.Location = new System.Drawing.Point(10, 11);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(114, 62);
+            this.logo.Size = new System.Drawing.Size(86, 50);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 7;
             this.logo.TabStop = false;
@@ -54,10 +53,9 @@
             // 
             this.cars_label.AutoSize = true;
             this.cars_label.Font = new System.Drawing.Font("Magneto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cars_label.Location = new System.Drawing.Point(135, 13);
-            this.cars_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cars_label.Location = new System.Drawing.Point(101, 11);
             this.cars_label.Name = "cars_label";
-            this.cars_label.Size = new System.Drawing.Size(113, 25);
+            this.cars_label.Size = new System.Drawing.Size(89, 20);
             this.cars_label.TabIndex = 6;
             this.cars_label.Text = "car$.com";
             // 
@@ -73,12 +71,13 @@
             // 
             // AdminPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1130, 602);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(848, 489);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cars_label);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "AdminPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
