@@ -16,8 +16,8 @@ namespace Cars
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPanel());
-            //Application.Run(new register_form());
+            Application.Run(new UserPanel());
+            
         }
     }
 }

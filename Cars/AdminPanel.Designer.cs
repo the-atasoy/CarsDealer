@@ -28,15 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
             this.logo = new System.Windows.Forms.PictureBox();
             this.cars_label = new System.Windows.Forms.Label();
-            this._cars_comDataSet = new Cars._cars_comDataSet();
-            this.carscomDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._cars_comDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carscomDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // logo
@@ -59,16 +54,6 @@
             this.cars_label.TabIndex = 6;
             this.cars_label.Text = "car$.com";
             // 
-            // _cars_comDataSet
-            // 
-            this._cars_comDataSet.DataSetName = "_cars_comDataSet";
-            this._cars_comDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // carscomDataSetBindingSource
-            // 
-            this.carscomDataSetBindingSource.DataSource = this._cars_comDataSet;
-            this.carscomDataSetBindingSource.Position = 0;
-            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -77,14 +62,12 @@
             this.ClientSize = new System.Drawing.Size(848, 489);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cars_label);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "AdminPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPanel";
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._cars_comDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carscomDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,7 +77,5 @@
 
         private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Label cars_label;
-        private _cars_comDataSet _cars_comDataSet;
-        private System.Windows.Forms.BindingSource carscomDataSetBindingSource;
     }
 }

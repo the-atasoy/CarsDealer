@@ -237,14 +237,15 @@
             // 
             // login_panel_button
             // 
+            this.login_panel_button.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.login_panel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_panel_button.Location = new System.Drawing.Point(10, 11);
-            this.login_panel_button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.login_panel_button.Margin = new System.Windows.Forms.Padding(2);
             this.login_panel_button.Name = "login_panel_button";
             this.login_panel_button.Size = new System.Drawing.Size(56, 50);
             this.login_panel_button.TabIndex = 17;
             this.login_panel_button.Text = "Login Panel";
-            this.login_panel_button.UseVisualStyleBackColor = true;
+            this.login_panel_button.UseVisualStyleBackColor = false;
             this.login_panel_button.Click += new System.EventHandler(this.login_panel_button_Click);
             // 
             // RegisterPanel

@@ -22,8 +22,6 @@ namespace Cars
 
         private void UserPanel_Load(object sender, EventArgs e)
         {
-            makeCombobox.Text = "Select Make";
-            modelCombobox.Text = "Select Model";
             showCarsButton.Enabled = false;
 
             LoadMakes();
@@ -156,18 +154,16 @@ namespace Cars
 
         }
 
+        private void logout_panel_button_Click(object sender, EventArgs e)
+        {
+            LoginPanel loginPanel = new LoginPanel();
+            loginPanel.Show();
+            this.Hide();
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
-/*
- *                  carsTable.DataSource = dt;
-                    carsTable.Columns["make"].Width = 100;
-                    carsTable.Columns["model"].Width = 100;
-                    carsTable.Columns["year"].Width = 60;
-                    carsTable.Columns["version"].Width = 100;
-                    carsTable.Columns["color"].Width = 80;
-                    carsTable.Columns["km"].Width = 80;
-                    carsTable.Columns["cylinder_capacity"].Width = 100;
-                    carsTable.Columns["hp"].Width = 80;
-                    carsTable.Columns["price"].Width = 80;
-*/
