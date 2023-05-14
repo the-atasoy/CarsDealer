@@ -95,13 +95,13 @@ namespace Cars
             SqlCommand cmd;
             if (string.IsNullOrEmpty(selectedModel))
             {
-                query = "SELECT make, model, year, version, color, km, CONCAT(cylinder_capacity, ' cc') as cylinder_capacity, hp, price FROM cars WHERE make=@make ORDER BY make ASC, model ASC";
+                query = "SELECT make, model, year, version, color, CONCAT(km, ' km') as km, CONCAT(cylinder_capacity, ' cc') as cylinder_capacity, CONCAT(hp, ' hp') as hp, CONCAT(price, ' $') as price FROM cars WHERE make=@make ORDER BY make ASC, model ASC";
                 cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@make", selectedMake);
             }
             else
             {
-                query = "SELECT make, model, year, version, color, km, CONCAT(cylinder_capacity, ' cc') as cylinder_capacity, hp, price FROM cars WHERE make=@make AND model=@model ORDER BY make ASC, model ASC";
+                query = "SELECT make, model, year, version, color, CONCAT(km, ' km') as km, CONCAT(cylinder_capacity, ' cc') as cylinder_capacity, CONCAT(hp, ' hp') as hp, CONCAT(price, ' $') as price FROM cars WHERE make=@make AND model=@model ORDER BY make ASC, model ASC";
                 cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@make", selectedMake);
                 cmd.Parameters.AddWithValue("@model", selectedModel);
@@ -114,6 +114,7 @@ namespace Cars
                 DataTable dataTable = new DataTable();
                 dataTable.Load(reader);
                 carsTable.DataSource = dataTable;
+                carsTable.ReadOnly = true;
 
                 // Set column widths
                 carsTable.Columns["make"].Width = 100;
