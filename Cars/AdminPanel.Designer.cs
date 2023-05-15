@@ -39,6 +39,10 @@
             this.makeCombobox = new System.Windows.Forms.ComboBox();
             this.userTable = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.addCarButton = new System.Windows.Forms.Button();
+            this.addUserButton = new System.Windows.Forms.Button();
+            this.deleteCarButton = new System.Windows.Forms.Button();
+            this.deleteUserButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTable)).BeginInit();
@@ -62,7 +66,7 @@
             this.cars_label.Location = new System.Drawing.Point(233, 56);
             this.cars_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cars_label.Name = "cars_label";
-            this.cars_label.Size = new System.Drawing.Size(189, 41);
+            this.cars_label.Size = new System.Drawing.Size(185, 41);
             this.cars_label.TabIndex = 6;
             this.cars_label.Text = "car$.com";
             // 
@@ -107,7 +111,7 @@
             this.showCarsButton.Location = new System.Drawing.Point(404, 339);
             this.showCarsButton.Margin = new System.Windows.Forms.Padding(4);
             this.showCarsButton.Name = "showCarsButton";
-            this.showCarsButton.Size = new System.Drawing.Size(127, 57);
+            this.showCarsButton.Size = new System.Drawing.Size(152, 57);
             this.showCarsButton.TabIndex = 11;
             this.showCarsButton.Text = "Show Cars";
             this.showCarsButton.UseVisualStyleBackColor = false;
@@ -147,6 +151,7 @@
             this.userTable.RowTemplate.Height = 24;
             this.userTable.Size = new System.Drawing.Size(1092, 150);
             this.userTable.TabIndex = 15;
+            this.userTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userTable_CellContentClick);
             // 
             // label1
             // 
@@ -159,6 +164,58 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Users";
             // 
+            // addCarButton
+            // 
+            this.addCarButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.addCarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCarButton.Location = new System.Drawing.Point(566, 339);
+            this.addCarButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addCarButton.Name = "addCarButton";
+            this.addCarButton.Size = new System.Drawing.Size(152, 57);
+            this.addCarButton.TabIndex = 11;
+            this.addCarButton.Text = "Add New Car";
+            this.addCarButton.UseVisualStyleBackColor = false;
+            this.addCarButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            // 
+            // addUserButton
+            // 
+            this.addUserButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.addUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addUserButton.Location = new System.Drawing.Point(795, 79);
+            this.addUserButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addUserButton.Name = "addUserButton";
+            this.addUserButton.Size = new System.Drawing.Size(152, 57);
+            this.addUserButton.TabIndex = 11;
+            this.addUserButton.Text = "Add New User";
+            this.addUserButton.UseVisualStyleBackColor = false;
+            this.addUserButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            // 
+            // deleteCarButton
+            // 
+            this.deleteCarButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.deleteCarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteCarButton.Location = new System.Drawing.Point(730, 339);
+            this.deleteCarButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteCarButton.Name = "deleteCarButton";
+            this.deleteCarButton.Size = new System.Drawing.Size(152, 57);
+            this.deleteCarButton.TabIndex = 11;
+            this.deleteCarButton.Text = "Delete Car";
+            this.deleteCarButton.UseVisualStyleBackColor = false;
+            this.deleteCarButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            // 
+            // deleteUserButton
+            // 
+            this.deleteUserButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.deleteUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteUserButton.Location = new System.Drawing.Point(959, 79);
+            this.deleteUserButton.Margin = new System.Windows.Forms.Padding(4);
+            this.deleteUserButton.Name = "deleteUserButton";
+            this.deleteUserButton.Size = new System.Drawing.Size(152, 57);
+            this.deleteUserButton.TabIndex = 11;
+            this.deleteUserButton.Text = "Delete User";
+            this.deleteUserButton.UseVisualStyleBackColor = false;
+            this.deleteUserButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,6 +227,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.selectBrandLabel);
             this.Controls.Add(this.carsTable);
+            this.Controls.Add(this.deleteCarButton);
+            this.Controls.Add(this.deleteUserButton);
+            this.Controls.Add(this.addUserButton);
+            this.Controls.Add(this.addCarButton);
             this.Controls.Add(this.showCarsButton);
             this.Controls.Add(this.modelCombobox);
             this.Controls.Add(this.makeCombobox);
@@ -201,5 +262,9 @@
         private System.Windows.Forms.ComboBox makeCombobox;
         private System.Windows.Forms.DataGridView userTable;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button addCarButton;
+        private System.Windows.Forms.Button addUserButton;
+        private System.Windows.Forms.Button deleteCarButton;
+        private System.Windows.Forms.Button deleteUserButton;
     }
 }
