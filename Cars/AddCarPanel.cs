@@ -52,7 +52,7 @@ namespace Cars
 
         private void ccTextbox_TextChanged(object sender, EventArgs e)
         {
-            ccTextbox.Text = string.Empty;
+            
         }
 
         private void versionTextbox_TextChanged(object sender, EventArgs e)
@@ -133,28 +133,24 @@ namespace Cars
             priceTextbox.Clear();
         }
 
-        private void ccTextbox_Enter(object sender, EventArgs e)
-        {
-            if (ccTextbox.Text == "Enter Cylinder Capacity")
-            {
-                ccTextbox.Text = "";
-                ccTextbox.ForeColor = SystemColors.WindowText;
-            }
-        }
-
-        private void ccTextbox_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(ccTextbox.Text))
-            {
-                ccTextbox.Text = "Enter Cylinder Capacity";
-                ccTextbox.ForeColor = SystemColors.GrayText;
-            }
-        }
-
         private void AddCarPanel_Load(object sender, EventArgs e)
         {
-            ccTextbox_Enter(sender, e);
-            ccTextbox_Leave(sender, e);
+           
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
