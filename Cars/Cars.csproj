@@ -89,6 +89,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_cars_comDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCarPanel.resx">
+      <DependentUpon>AddCarPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
