@@ -175,7 +175,7 @@
             this.addCarButton.TabIndex = 11;
             this.addCarButton.Text = "Add New Car";
             this.addCarButton.UseVisualStyleBackColor = false;
-            this.addCarButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            this.addCarButton.Click += new System.EventHandler(this.addCarButton_Click);
             // 
             // addUserButton
             // 
@@ -188,7 +188,7 @@
             this.addUserButton.TabIndex = 11;
             this.addUserButton.Text = "Add New User";
             this.addUserButton.UseVisualStyleBackColor = false;
-            this.addUserButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
             // deleteCarButton
             // 
@@ -201,7 +201,7 @@
             this.deleteCarButton.TabIndex = 11;
             this.deleteCarButton.Text = "Delete Car";
             this.deleteCarButton.UseVisualStyleBackColor = false;
-            this.deleteCarButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            this.deleteCarButton.Click += new System.EventHandler(this.deleteCarButton_Click);
             // 
             // deleteUserButton
             // 
@@ -214,7 +214,7 @@
             this.deleteUserButton.TabIndex = 11;
             this.deleteUserButton.Text = "Delete User";
             this.deleteUserButton.UseVisualStyleBackColor = false;
-            this.deleteUserButton.Click += new System.EventHandler(this.showCarsButton_Click);
+            this.deleteUserButton.Click += new System.EventHandler(this.deleteUserButton_Click);
             // 
             // AdminPanel
             // 
