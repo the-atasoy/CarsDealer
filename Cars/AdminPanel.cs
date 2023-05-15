@@ -21,6 +21,8 @@ namespace Cars
         {
             LoadMakes();
             LoadUsers();
+            string Username = UserCredentials.Username;
+            string Password = UserCredentials.Password;
         }
 
         private void LoadMakes()
@@ -268,6 +270,14 @@ namespace Cars
         {
             AddCarPanel addCarPanel = new AddCarPanel();
             addCarPanel.ShowDialog();
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+            AdminPanel adminPanel = new AdminPanel();
+            this.Hide();
+            adminPanel.ShowDialog();
+            
         }
 
         private void modelCombobox_SelectedIndexChanged(object sender, EventArgs e)

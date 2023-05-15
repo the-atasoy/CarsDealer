@@ -16,5 +16,11 @@ namespace Cars
         {
             InitializeComponent();
         }
+
+        private void AddUserPanel_Load(object sender, EventArgs e)
+        {
+            string savedUsername = UserCredentials.Username;
+            string savedPassword = UserCredentials.Password;
+        }
     }
 }

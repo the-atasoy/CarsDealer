@@ -60,6 +60,9 @@ namespace Cars
                 error_label.Text = "Password or username is incorrect!";
             }
 
+            UserCredentials.Username = username_textbox.Text;
+            UserCredentials.Password = password_textbox.Text;
+
 
             conn.Close();
         }
@@ -96,6 +99,16 @@ namespace Cars
         private void username_textbox_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        public string getUserName()
+        {
+            return username_textbox.Text;
+        }
+
+        public string getPassword()
+        {
+            return password_textbox.Text;
         }
     }
 }

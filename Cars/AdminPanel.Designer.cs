@@ -43,6 +43,7 @@
             this.addUserButton = new System.Windows.Forms.Button();
             this.deleteCarButton = new System.Windows.Forms.Button();
             this.deleteUserButton = new System.Windows.Forms.Button();
+            this.refreshButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTable)).BeginInit();
@@ -216,6 +217,19 @@
             this.deleteUserButton.UseVisualStyleBackColor = false;
             this.deleteUserButton.Click += new System.EventHandler(this.deleteUserButton_Click);
             // 
+            // refreshButton
+            // 
+            this.refreshButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.refreshButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refreshButton.Location = new System.Drawing.Point(1020, 13);
+            this.refreshButton.Margin = new System.Windows.Forms.Padding(4);
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(91, 33);
+            this.refreshButton.TabIndex = 11;
+            this.refreshButton.Text = "Refresh";
+            this.refreshButton.UseVisualStyleBackColor = false;
+            this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -228,6 +242,7 @@
             this.Controls.Add(this.selectBrandLabel);
             this.Controls.Add(this.carsTable);
             this.Controls.Add(this.deleteCarButton);
+            this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.deleteUserButton);
             this.Controls.Add(this.addUserButton);
             this.Controls.Add(this.addCarButton);
@@ -266,5 +281,6 @@
         private System.Windows.Forms.Button addUserButton;
         private System.Windows.Forms.Button deleteCarButton;
         private System.Windows.Forms.Button deleteUserButton;
+        private System.Windows.Forms.Button refreshButton;
     }
 }
