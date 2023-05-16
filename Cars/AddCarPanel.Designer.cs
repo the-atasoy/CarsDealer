@@ -63,7 +63,6 @@
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 9;
             this.logo.TabStop = false;
-            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // cars_label
             // 
@@ -85,7 +84,6 @@
             this.makeTextbox.Name = "makeTextbox";
             this.makeTextbox.Size = new System.Drawing.Size(167, 28);
             this.makeTextbox.TabIndex = 0;
-            this.makeTextbox.TextChanged += new System.EventHandler(this.makeTextbox_TextChanged);
             // 
             // modelTextbox
             // 
@@ -96,7 +94,6 @@
             this.modelTextbox.Name = "modelTextbox";
             this.modelTextbox.Size = new System.Drawing.Size(167, 28);
             this.modelTextbox.TabIndex = 1;
-            this.modelTextbox.TextChanged += new System.EventHandler(this.modelTextbox_TextChanged);
             // 
             // yearTextbox
             // 
@@ -107,7 +104,6 @@
             this.yearTextbox.Name = "yearTextbox";
             this.yearTextbox.Size = new System.Drawing.Size(167, 28);
             this.yearTextbox.TabIndex = 2;
-            this.yearTextbox.TextChanged += new System.EventHandler(this.yearTextbox_TextChanged);
             // 
             // hpTextbox
             // 
@@ -118,7 +114,6 @@
             this.hpTextbox.Name = "hpTextbox";
             this.hpTextbox.Size = new System.Drawing.Size(167, 28);
             this.hpTextbox.TabIndex = 7;
-            this.hpTextbox.TextChanged += new System.EventHandler(this.hpTextbox_TextChanged);
             // 
             // versionTextbox
             // 
@@ -129,7 +124,6 @@
             this.versionTextbox.Name = "versionTextbox";
             this.versionTextbox.Size = new System.Drawing.Size(167, 28);
             this.versionTextbox.TabIndex = 3;
-            this.versionTextbox.TextChanged += new System.EventHandler(this.versionTextbox_TextChanged);
             // 
             // colorTextbox
             // 
@@ -140,7 +134,6 @@
             this.colorTextbox.Name = "colorTextbox";
             this.colorTextbox.Size = new System.Drawing.Size(167, 28);
             this.colorTextbox.TabIndex = 4;
-            this.colorTextbox.TextChanged += new System.EventHandler(this.colorTextbox_TextChanged);
             // 
             // kmTextbox
             // 
@@ -151,7 +144,6 @@
             this.kmTextbox.Name = "kmTextbox";
             this.kmTextbox.Size = new System.Drawing.Size(167, 28);
             this.kmTextbox.TabIndex = 5;
-            this.kmTextbox.TextChanged += new System.EventHandler(this.kmTextbox_TextChanged);
             // 
             // priceTextbox
             // 
@@ -162,7 +154,6 @@
             this.priceTextbox.Name = "priceTextbox";
             this.priceTextbox.Size = new System.Drawing.Size(167, 28);
             this.priceTextbox.TabIndex = 8;
-            this.priceTextbox.TextChanged += new System.EventHandler(this.priceTextbox_TextChanged);
             // 
             // ccTextbox
             // 
@@ -173,7 +164,6 @@
             this.ccTextbox.Name = "ccTextbox";
             this.ccTextbox.Size = new System.Drawing.Size(167, 28);
             this.ccTextbox.TabIndex = 6;
-            this.ccTextbox.TextChanged += new System.EventHandler(this.ccTextbox_TextChanged);
             // 
             // addCarButton
             // 
@@ -256,7 +246,6 @@
             this.ccLabel.Size = new System.Drawing.Size(156, 22);
             this.ccLabel.TabIndex = 12;
             this.ccLabel.Text = "Cylinder Capacity:";
-            this.ccLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // hpLabel
             // 
@@ -267,7 +256,6 @@
             this.hpLabel.Size = new System.Drawing.Size(119, 22);
             this.hpLabel.TabIndex = 12;
             this.hpLabel.Text = "Horse Power:";
-            this.hpLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // priceLabel
             // 
@@ -278,7 +266,6 @@
             this.priceLabel.Size = new System.Drawing.Size(56, 22);
             this.priceLabel.TabIndex = 12;
             this.priceLabel.Text = "Price:";
-            this.priceLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // AddCarPanel
             // 
@@ -307,11 +294,11 @@
             this.Controls.Add(this.makeTextbox);
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cars_label);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddCarPanel";
             this.Text = "Add New Car";
-            this.Load += new System.EventHandler(this.AddCarPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

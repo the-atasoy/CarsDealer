@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cars
@@ -20,27 +13,12 @@ namespace Cars
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login_button_Click(object sender, EventArgs e)
+        private void loginButton_Click(object sender, EventArgs e)
         {
             conn.Open();
-            string name_password_query = "SELECT COUNT(*) FROM users WHERE username = '"+username_textbox.Text+ "' AND password = '"+password_textbox.Text+"'";
+            string name_password_query = "SELECT COUNT(*) FROM users WHERE username = '"+usernameTextbox.Text+ "' AND password = '"+passwordTextbox.Text+"'";
             SqlCommand name_password_check = new SqlCommand(name_password_query, conn);
-            string is_admin_query = "SELECT COUNT(*) FROM users WHERE username = '" + username_textbox.Text + "' AND password = '" + password_textbox.Text + "' AND is_admin = '"+true+"'";
+            string is_admin_query = "SELECT COUNT(*) FROM users WHERE username = '" + usernameTextbox.Text + "' AND password = '" + passwordTextbox.Text + "' AND is_admin = '"+true+"'";
             SqlCommand admin_check = new SqlCommand(is_admin_query, conn);
 
             if ((int)name_password_check.ExecuteScalar() > 0 && (int)admin_check.ExecuteScalar() <= 0)
@@ -51,9 +29,9 @@ namespace Cars
                 
             }
             else if((int)admin_check.ExecuteScalar() > 0){
-                string is_boss_query = "SELECT COUNT(*) FROM users WHERE username = '" + username_textbox.Text + "' AND password = '" + password_textbox.Text + "' AND is_boss = '" + true + "'";
+                string is_boss_query = "SELECT COUNT(*) FROM users WHERE username = '" + usernameTextbox.Text + "' AND password = '" + passwordTextbox.Text + "' AND is_boss = '" + true + "'";
                 SqlCommand boss_check = new SqlCommand(is_boss_query, conn);
-                UserCredentials.is_boss = ((int)boss_check.ExecuteScalar() > 0);
+                UserCredentials.isBoss = ((int)boss_check.ExecuteScalar() > 0);
                 AdminPanel adminPanel = new AdminPanel();
                 adminPanel.Show();
                 this.Hide();
@@ -63,54 +41,30 @@ namespace Cars
                 error_label.Text = "Password or username is incorrect!";
             }
 
-            UserCredentials.Username = username_textbox.Text;
-            UserCredentials.Password = password_textbox.Text;
+            UserCredentials.Username = usernameTextbox.Text;
+            UserCredentials.Password = passwordTextbox.Text;
+            UserCredentials.isAdmin = ((int)admin_check.ExecuteScalar() > 0);
 
             conn.Close();
         }
 
-        private void elseif(bool v)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void isadmin_checkbox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void register_button_Click(object sender, EventArgs e)
+        private void registerButton_Click(object sender, EventArgs e)
         {
             RegisterPanel registerPanel = new RegisterPanel();
             registerPanel.Show();
             this.Hide();
         }
 
-        private void show_checkbox_CheckedChanged(object sender, EventArgs e)
+        private void showCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            if (show_checkbox.Checked)
+            if (showCheckbox.Checked)
             {
-                password_textbox.PasswordChar = '\0'; // Show password as plain text
+                passwordTextbox.PasswordChar = '\0';
             }
             else
             {
-                password_textbox.PasswordChar = '*'; // Hide password
+                passwordTextbox.PasswordChar = '*';
             }
-        }
-
-        private void username_textbox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        public string getUserName()
-        {
-            return username_textbox.Text;
-        }
-
-        public string getPassword()
-        {
-            return password_textbox.Text;
         }
     }
 }

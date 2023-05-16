@@ -20,7 +20,7 @@ namespace Cars
         {
             LoadMakes();
             LoadUsers();
-            bool isBoss = UserCredentials.is_boss;
+            bool isBoss = UserCredentials.isBoss;
             if (!isBoss)
             {
                 addAdminButton.Enabled = false;
@@ -91,6 +91,8 @@ namespace Cars
 
         private void LoadUsers()
         {
+            bool isBoss = UserCredentials.isBoss;
+            bool isAdmin = UserCredentials.isAdmin;
             string query = "SELECT username, email, phonenumber, password, register_date, is_admin, is_boss FROM users ORDER BY is_boss DESC, is_admin DESC, username ASC";
 
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -99,6 +101,30 @@ namespace Cars
             adapter.Fill(dataTable);
             userTable.DataSource = dataTable;
             userTable.ReadOnly = true;
+
+            userTable.Columns["username"].Width = 114;
+            userTable.Columns["email"].Width = 164;
+            userTable.Columns["phonenumber"].Width = 135;
+            userTable.Columns["password"].Width = 135;
+            userTable.Columns["register_date"].Width = 80;
+            userTable.Columns["is_admin"].Width = 60;
+            userTable.Columns["is_boss"].Width = 60;
+
+            userTable.Columns["username"].HeaderText = "Username";
+            userTable.Columns["email"].HeaderText = "E-mail";
+            userTable.Columns["phonenumber"].HeaderText = "Phone Number";
+            userTable.Columns["password"].HeaderText = "Password";
+            userTable.Columns["register_date"].HeaderText = "Register Date";
+            userTable.Columns["is_admin"].HeaderText = "Admin";
+            userTable.Columns["is_boss"].HeaderText = "Boss";
+
+            if (!isBoss)
+            {
+                foreach (DataGridViewRow row in userTable.Rows)
+                {
+                    row.Cells["password"].Value = "********";
+                }
+            }
         }
 
         private void makeCombobox_SelectedIndexChanged(object sender, EventArgs e)
@@ -192,7 +218,7 @@ namespace Cars
                             MessageBox.Show("Cannot Delete a Boss.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             continue;
                         }
-                        bool isBoss = UserCredentials.is_boss;
+                        bool isBoss = UserCredentials.isBoss;
                         if (isAdminValue != DBNull.Value && Convert.ToBoolean(isAdminValue) && !isBoss)
                         {
                             MessageBox.Show("Cannot Delete Another Admin.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -291,26 +317,11 @@ namespace Cars
             
         }
 
-        private void modelCombobox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void carsTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void userTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void logout_panel_button_Click(object sender, EventArgs e)
+        private void logoutButton_Click(object sender, EventArgs e)
         {
             LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

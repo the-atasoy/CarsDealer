@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cars
@@ -19,56 +12,6 @@ namespace Cars
         }
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
-
-        private void logo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void priceTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void kmTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void yearTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hpTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void colorTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ccTextbox_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void versionTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void modelTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void makeTextbox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void addCarButton_Click(object sender, EventArgs e)
         {
@@ -140,26 +83,6 @@ namespace Cars
             ccTextbox.Clear();
             hpTextbox.Clear();
             priceTextbox.Clear();
-        }
-
-        private void AddCarPanel_Load(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

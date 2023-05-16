@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAdminPanel));
             this.logo = new System.Windows.Forms.PictureBox();
-            this.cars_label = new System.Windows.Forms.Label();
+            this.carsLabel = new System.Windows.Forms.Label();
             this.phonenumberLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
@@ -54,16 +54,16 @@
             this.logo.TabIndex = 11;
             this.logo.TabStop = false;
             // 
-            // cars_label
+            // carsLabel
             // 
-            this.cars_label.AutoSize = true;
-            this.cars_label.Font = new System.Drawing.Font("Magneto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cars_label.Location = new System.Drawing.Point(128, 34);
-            this.cars_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.cars_label.Name = "cars_label";
-            this.cars_label.Size = new System.Drawing.Size(99, 22);
-            this.cars_label.TabIndex = 10;
-            this.cars_label.Text = "car$.com";
+            this.carsLabel.AutoSize = true;
+            this.carsLabel.Font = new System.Drawing.Font("Magneto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.carsLabel.Location = new System.Drawing.Point(128, 34);
+            this.carsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carsLabel.Name = "carsLabel";
+            this.carsLabel.Size = new System.Drawing.Size(99, 22);
+            this.carsLabel.TabIndex = 10;
+            this.carsLabel.Text = "car$.com";
             // 
             // phonenumberLabel
             // 
@@ -84,7 +84,6 @@
             this.emailLabel.Size = new System.Drawing.Size(59, 22);
             this.emailLabel.TabIndex = 17;
             this.emailLabel.Text = "Email:";
-            this.emailLabel.Click += new System.EventHandler(this.modelLabel_Click);
             // 
             // usernameLabel
             // 
@@ -174,7 +173,8 @@
             this.Controls.Add(this.emailTextbox);
             this.Controls.Add(this.usernameTextbox);
             this.Controls.Add(this.logo);
-            this.Controls.Add(this.cars_label);
+            this.Controls.Add(this.carsLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AddAdminPanel";
             this.Text = "Add New Admin";
@@ -188,7 +188,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.Label cars_label;
+        private System.Windows.Forms.Label carsLabel;
         private System.Windows.Forms.Label phonenumberLabel;
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.Label usernameLabel;

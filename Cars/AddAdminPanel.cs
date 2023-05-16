@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace Cars
 {
@@ -25,12 +18,7 @@ namespace Cars
         {
             string Username = UserCredentials.Username;
             string Password = UserCredentials.Password;
-            bool IsBoss = UserCredentials.is_boss;
-        }
-
-        private void modelLabel_Click(object sender, EventArgs e)
-        {
-
+            bool IsBoss = UserCredentials.isBoss;
         }
 
         private void addAdminButton_Click(object sender, EventArgs e)

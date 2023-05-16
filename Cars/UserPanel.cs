@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cars
@@ -157,23 +151,11 @@ namespace Cars
             }
         }
 
-
-
-        private void modelCombobox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logout_panel_button_Click(object sender, EventArgs e)
+        private void logoutButton_Click(object sender, EventArgs e)
         {
             LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
             this.Hide();
-        }
-
-        private void logo_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

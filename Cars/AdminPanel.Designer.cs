@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
             this.logo = new System.Windows.Forms.PictureBox();
-            this.cars_label = new System.Windows.Forms.Label();
+            this.carscomLabel = new System.Windows.Forms.Label();
             this.selectModelLabel = new System.Windows.Forms.Label();
             this.selectBrandLabel = new System.Windows.Forms.Label();
             this.carsTable = new System.Windows.Forms.DataGridView();
@@ -38,13 +38,13 @@
             this.modelCombobox = new System.Windows.Forms.ComboBox();
             this.makeCombobox = new System.Windows.Forms.ComboBox();
             this.userTable = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.usersLabel = new System.Windows.Forms.Label();
             this.addCarButton = new System.Windows.Forms.Button();
             this.addAdminButton = new System.Windows.Forms.Button();
             this.deleteCarButton = new System.Windows.Forms.Button();
             this.deleteUserButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
-            this.logout_panel_button = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTable)).BeginInit();
@@ -61,16 +61,16 @@
             this.logo.TabIndex = 7;
             this.logo.TabStop = false;
             // 
-            // cars_label
+            // carscomLabel
             // 
-            this.cars_label.AutoSize = true;
-            this.cars_label.Font = new System.Drawing.Font("Magneto", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cars_label.Location = new System.Drawing.Point(233, 56);
-            this.cars_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.cars_label.Name = "cars_label";
-            this.cars_label.Size = new System.Drawing.Size(185, 41);
-            this.cars_label.TabIndex = 6;
-            this.cars_label.Text = "car$.com";
+            this.carscomLabel.AutoSize = true;
+            this.carscomLabel.Font = new System.Drawing.Font("Magneto", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.carscomLabel.Location = new System.Drawing.Point(233, 56);
+            this.carscomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carscomLabel.Name = "carscomLabel";
+            this.carscomLabel.Size = new System.Drawing.Size(185, 41);
+            this.carscomLabel.TabIndex = 6;
+            this.carscomLabel.Text = "car$.com";
             // 
             // selectModelLabel
             // 
@@ -104,7 +104,6 @@
             this.carsTable.RowHeadersWidth = 51;
             this.carsTable.Size = new System.Drawing.Size(1092, 152);
             this.carsTable.TabIndex = 12;
-            this.carsTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.carsTable_CellContentClick);
             // 
             // showCarsButton
             // 
@@ -129,7 +128,6 @@
             this.modelCombobox.Name = "modelCombobox";
             this.modelCombobox.Size = new System.Drawing.Size(160, 24);
             this.modelCombobox.TabIndex = 9;
-            this.modelCombobox.SelectedIndexChanged += new System.EventHandler(this.modelCombobox_SelectedIndexChanged);
             // 
             // makeCombobox
             // 
@@ -153,18 +151,17 @@
             this.userTable.RowTemplate.Height = 24;
             this.userTable.Size = new System.Drawing.Size(1092, 150);
             this.userTable.TabIndex = 15;
-            this.userTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.userTable_CellContentClick);
             // 
-            // label1
+            // usersLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(539, 114);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 22);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Users";
+            this.usersLabel.AutoSize = true;
+            this.usersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersLabel.Location = new System.Drawing.Point(539, 114);
+            this.usersLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.usersLabel.Name = "usersLabel";
+            this.usersLabel.Size = new System.Drawing.Size(57, 22);
+            this.usersLabel.TabIndex = 14;
+            this.usersLabel.Text = "Users";
             // 
             // addCarButton
             // 
@@ -231,18 +228,18 @@
             this.refreshButton.UseVisualStyleBackColor = false;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
-            // logout_panel_button
+            // logoutButton
             // 
-            this.logout_panel_button.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.logout_panel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_panel_button.Location = new System.Drawing.Point(1018, 11);
-            this.logout_panel_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.logout_panel_button.Name = "logout_panel_button";
-            this.logout_panel_button.Size = new System.Drawing.Size(101, 33);
-            this.logout_panel_button.TabIndex = 19;
-            this.logout_panel_button.Text = "Log Out";
-            this.logout_panel_button.UseVisualStyleBackColor = false;
-            this.logout_panel_button.Click += new System.EventHandler(this.logout_panel_button_Click);
+            this.logoutButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutButton.Location = new System.Drawing.Point(1018, 11);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(101, 33);
+            this.logoutButton.TabIndex = 19;
+            this.logoutButton.Text = "Log Out";
+            this.logoutButton.UseVisualStyleBackColor = false;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // AdminPanel
             // 
@@ -250,10 +247,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1131, 602);
-            this.Controls.Add(this.logout_panel_button);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.userTable);
             this.Controls.Add(this.selectModelLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.usersLabel);
             this.Controls.Add(this.selectBrandLabel);
             this.Controls.Add(this.carsTable);
             this.Controls.Add(this.deleteCarButton);
@@ -265,7 +262,8 @@
             this.Controls.Add(this.modelCombobox);
             this.Controls.Add(this.makeCombobox);
             this.Controls.Add(this.logo);
-            this.Controls.Add(this.cars_label);
+            this.Controls.Add(this.carscomLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "AdminPanel";
@@ -283,7 +281,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.Label cars_label;
+        private System.Windows.Forms.Label carscomLabel;
         private System.Windows.Forms.Label selectModelLabel;
         private System.Windows.Forms.Label selectBrandLabel;
         private System.Windows.Forms.DataGridView carsTable;
@@ -291,12 +289,12 @@
         private System.Windows.Forms.ComboBox modelCombobox;
         private System.Windows.Forms.ComboBox makeCombobox;
         private System.Windows.Forms.DataGridView userTable;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label usersLabel;
         private System.Windows.Forms.Button addCarButton;
         private System.Windows.Forms.Button addAdminButton;
         private System.Windows.Forms.Button deleteCarButton;
         private System.Windows.Forms.Button deleteUserButton;
         private System.Windows.Forms.Button refreshButton;
-        private System.Windows.Forms.Button logout_panel_button;
+        private System.Windows.Forms.Button logoutButton;
     }
 }
