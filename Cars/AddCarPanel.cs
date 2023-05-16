@@ -96,6 +96,14 @@ namespace Cars
             cmd.Parameters.AddWithValue("@hp", hp);
             cmd.Parameters.AddWithValue("@price", price);
 
+            if (string.IsNullOrEmpty(make) || string.IsNullOrEmpty(model) || string.IsNullOrEmpty(year) ||
+        string.IsNullOrEmpty(version) || string.IsNullOrEmpty(color) || string.IsNullOrEmpty(km) ||
+        string.IsNullOrEmpty(hp) || string.IsNullOrEmpty(price))
+            {
+                MessageBox.Show("All information should be filled.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
                 conn.Open();
@@ -108,6 +116,7 @@ namespace Cars
                 else
                 {
                     MessageBox.Show("Failed to add car.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    ClearCarForm();
                 }
             }
             catch (Exception ex)

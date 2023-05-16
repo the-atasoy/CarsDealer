@@ -51,6 +51,9 @@ namespace Cars
                 
             }
             else if((int)admin_check.ExecuteScalar() > 0){
+                string is_boss_query = "SELECT COUNT(*) FROM users WHERE username = '" + username_textbox.Text + "' AND password = '" + password_textbox.Text + "' AND is_boss = '" + true + "'";
+                SqlCommand boss_check = new SqlCommand(is_boss_query, conn);
+                UserCredentials.is_boss = ((int)boss_check.ExecuteScalar() > 0);
                 AdminPanel adminPanel = new AdminPanel();
                 adminPanel.Show();
                 this.Hide();
@@ -62,7 +65,6 @@ namespace Cars
 
             UserCredentials.Username = username_textbox.Text;
             UserCredentials.Password = password_textbox.Text;
-
 
             conn.Close();
         }

@@ -52,11 +52,11 @@
     <Compile Include="AddCarPanel.Designer.cs">
       <DependentUpon>AddCarPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddUserPanel.cs">
+    <Compile Include="AddAdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddUserPanel.Designer.cs">
-      <DependentUpon>AddUserPanel.cs</DependentUpon>
+    <Compile Include="AddAdminPanel.Designer.cs">
+      <DependentUpon>AddAdminPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminPanel.cs">
       <SubType>Form</SubType>
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="AddCarPanel.resx">
       <DependentUpon>AddCarPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddUserPanel.resx">
-      <DependentUpon>AddUserPanel.cs</DependentUpon>
+    <EmbeddedResource Include="AddAdminPanel.resx">
+      <DependentUpon>AddAdminPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>

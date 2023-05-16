@@ -9,6 +9,7 @@ namespace Cars
     internal class UserCredentials {
         public static string Username { get; set; }
         public static string Password { get; set; }
+        public static bool is_boss {  get; set; }
     
     }
 }

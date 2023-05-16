@@ -81,9 +81,10 @@
             this.makeTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.makeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.makeTextbox.Location = new System.Drawing.Point(12, 117);
+            this.makeTextbox.MaxLength = 20;
             this.makeTextbox.Name = "makeTextbox";
             this.makeTextbox.Size = new System.Drawing.Size(167, 28);
-            this.makeTextbox.TabIndex = 10;
+            this.makeTextbox.TabIndex = 0;
             this.makeTextbox.TextChanged += new System.EventHandler(this.makeTextbox_TextChanged);
             // 
             // modelTextbox
@@ -91,9 +92,10 @@
             this.modelTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.modelTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modelTextbox.Location = new System.Drawing.Point(12, 208);
+            this.modelTextbox.MaxLength = 60;
             this.modelTextbox.Name = "modelTextbox";
             this.modelTextbox.Size = new System.Drawing.Size(167, 28);
-            this.modelTextbox.TabIndex = 10;
+            this.modelTextbox.TabIndex = 1;
             this.modelTextbox.TextChanged += new System.EventHandler(this.modelTextbox_TextChanged);
             // 
             // yearTextbox
@@ -101,9 +103,10 @@
             this.yearTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.yearTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yearTextbox.Location = new System.Drawing.Point(12, 304);
+            this.yearTextbox.MaxLength = 4;
             this.yearTextbox.Name = "yearTextbox";
             this.yearTextbox.Size = new System.Drawing.Size(167, 28);
-            this.yearTextbox.TabIndex = 10;
+            this.yearTextbox.TabIndex = 2;
             this.yearTextbox.TextChanged += new System.EventHandler(this.yearTextbox_TextChanged);
             // 
             // hpTextbox
@@ -111,9 +114,10 @@
             this.hpTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hpTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hpTextbox.Location = new System.Drawing.Point(413, 208);
+            this.hpTextbox.MaxLength = 4;
             this.hpTextbox.Name = "hpTextbox";
             this.hpTextbox.Size = new System.Drawing.Size(167, 28);
-            this.hpTextbox.TabIndex = 10;
+            this.hpTextbox.TabIndex = 7;
             this.hpTextbox.TextChanged += new System.EventHandler(this.hpTextbox_TextChanged);
             // 
             // versionTextbox
@@ -121,9 +125,10 @@
             this.versionTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.versionTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.versionTextbox.Location = new System.Drawing.Point(213, 117);
+            this.versionTextbox.MaxLength = 60;
             this.versionTextbox.Name = "versionTextbox";
             this.versionTextbox.Size = new System.Drawing.Size(167, 28);
-            this.versionTextbox.TabIndex = 10;
+            this.versionTextbox.TabIndex = 3;
             this.versionTextbox.TextChanged += new System.EventHandler(this.versionTextbox_TextChanged);
             // 
             // colorTextbox
@@ -131,9 +136,10 @@
             this.colorTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.colorTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorTextbox.Location = new System.Drawing.Point(213, 208);
+            this.colorTextbox.MaxLength = 20;
             this.colorTextbox.Name = "colorTextbox";
             this.colorTextbox.Size = new System.Drawing.Size(167, 28);
-            this.colorTextbox.TabIndex = 10;
+            this.colorTextbox.TabIndex = 4;
             this.colorTextbox.TextChanged += new System.EventHandler(this.colorTextbox_TextChanged);
             // 
             // kmTextbox
@@ -141,9 +147,10 @@
             this.kmTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.kmTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kmTextbox.Location = new System.Drawing.Point(213, 304);
+            this.kmTextbox.MaxLength = 7;
             this.kmTextbox.Name = "kmTextbox";
             this.kmTextbox.Size = new System.Drawing.Size(167, 28);
-            this.kmTextbox.TabIndex = 10;
+            this.kmTextbox.TabIndex = 5;
             this.kmTextbox.TextChanged += new System.EventHandler(this.kmTextbox_TextChanged);
             // 
             // priceTextbox
@@ -151,9 +158,10 @@
             this.priceTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.priceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceTextbox.Location = new System.Drawing.Point(413, 304);
+            this.priceTextbox.MaxLength = 20;
             this.priceTextbox.Name = "priceTextbox";
             this.priceTextbox.Size = new System.Drawing.Size(167, 28);
-            this.priceTextbox.TabIndex = 10;
+            this.priceTextbox.TabIndex = 8;
             this.priceTextbox.TextChanged += new System.EventHandler(this.priceTextbox_TextChanged);
             // 
             // ccTextbox
@@ -161,9 +169,10 @@
             this.ccTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ccTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ccTextbox.Location = new System.Drawing.Point(413, 117);
+            this.ccTextbox.MaxLength = 5;
             this.ccTextbox.Name = "ccTextbox";
             this.ccTextbox.Size = new System.Drawing.Size(167, 28);
-            this.ccTextbox.TabIndex = 10;
+            this.ccTextbox.TabIndex = 6;
             this.ccTextbox.TextChanged += new System.EventHandler(this.ccTextbox_TextChanged);
             // 
             // addCarButton
@@ -173,7 +182,7 @@
             this.addCarButton.Location = new System.Drawing.Point(262, 354);
             this.addCarButton.Name = "addCarButton";
             this.addCarButton.Size = new System.Drawing.Size(72, 66);
-            this.addCarButton.TabIndex = 11;
+            this.addCarButton.TabIndex = 9;
             this.addCarButton.Text = "Add Car";
             this.addCarButton.UseVisualStyleBackColor = false;
             this.addCarButton.Click += new System.EventHandler(this.addCarButton_Click);
@@ -299,8 +308,9 @@
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cars_label);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AddCarPanel";
-            this.Text = "AddCarPanel";
+            this.Text = "Add New Car";
             this.Load += new System.EventHandler(this.AddCarPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);

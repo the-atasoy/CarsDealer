@@ -13,7 +13,6 @@ namespace Cars
         {
             InitializeComponent();
 
-            // Initialize the SqlConnection
             conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
         }
 
@@ -21,8 +20,15 @@ namespace Cars
         {
             LoadMakes();
             LoadUsers();
-            string Username = UserCredentials.Username;
-            string Password = UserCredentials.Password;
+            bool isBoss = UserCredentials.is_boss;
+            if (!isBoss)
+            {
+                addAdminButton.Enabled = false;
+            }
+            else
+            {
+                addAdminButton.Enabled = true;
+            }
         }
 
         private void LoadMakes()
@@ -137,7 +143,6 @@ namespace Cars
                 carsTable.DataSource = dataTable;
                 carsTable.ReadOnly = true;
 
-                // Set column widths
                 carsTable.Columns["make"].Width = 100;
                 carsTable.Columns["model"].Width = 100;
                 carsTable.Columns["year"].Width = 60;
@@ -148,7 +153,6 @@ namespace Cars
                 carsTable.Columns["hp"].Width = 80;
                 carsTable.Columns["price"].Width = 80;
 
-                // Set column headers
                 carsTable.Columns["make"].HeaderText = "Make";
                 carsTable.Columns["model"].HeaderText = "Model";
                 carsTable.Columns["year"].HeaderText = "Year";
@@ -182,10 +186,17 @@ namespace Cars
                     foreach (DataGridViewRow row in userTable.SelectedRows)
                     {
                         object isBossValue = row.Cells["is_boss"].Value;
+                        object isAdminValue = row.Cells["is_admin"].Value;
                         if (isBossValue != DBNull.Value && Convert.ToBoolean(isBossValue))
                         {
-                            MessageBox.Show("Cannot delete a boss user.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                            continue; // Skip deleting this row
+                            MessageBox.Show("Cannot Delete a Boss.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            continue;
+                        }
+                        bool isBoss = UserCredentials.is_boss;
+                        if (isAdminValue != DBNull.Value && Convert.ToBoolean(isAdminValue) && !isBoss)
+                        {
+                            MessageBox.Show("Cannot Delete Another Admin.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            continue;
                         }
 
                         string username = row.Cells["username"].Value.ToString();
@@ -260,9 +271,9 @@ namespace Cars
             }
         }
 
-        private void addUserButton_Click(object sender, EventArgs e)
+        private void addAdminButton_Click(object sender, EventArgs e)
         {
-            AddUserPanel addUserPanel = new AddUserPanel();
+            AddAdminPanel addUserPanel = new AddAdminPanel();
             addUserPanel.ShowDialog();
         }
 
@@ -293,6 +304,13 @@ namespace Cars
         private void userTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void logout_panel_button_Click(object sender, EventArgs e)
+        {
+            LoginPanel loginPanel = new LoginPanel();
+            loginPanel.Show();
+            this.Hide();
         }
     }
 }

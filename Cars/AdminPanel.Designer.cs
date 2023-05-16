@@ -40,10 +40,11 @@
             this.userTable = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.addCarButton = new System.Windows.Forms.Button();
-            this.addUserButton = new System.Windows.Forms.Button();
+            this.addAdminButton = new System.Windows.Forms.Button();
             this.deleteCarButton = new System.Windows.Forms.Button();
             this.deleteUserButton = new System.Windows.Forms.Button();
             this.refreshButton = new System.Windows.Forms.Button();
+            this.logout_panel_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTable)).BeginInit();
@@ -178,18 +179,18 @@
             this.addCarButton.UseVisualStyleBackColor = false;
             this.addCarButton.Click += new System.EventHandler(this.addCarButton_Click);
             // 
-            // addUserButton
+            // addAdminButton
             // 
-            this.addUserButton.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.addUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addUserButton.Location = new System.Drawing.Point(795, 79);
-            this.addUserButton.Margin = new System.Windows.Forms.Padding(4);
-            this.addUserButton.Name = "addUserButton";
-            this.addUserButton.Size = new System.Drawing.Size(152, 57);
-            this.addUserButton.TabIndex = 11;
-            this.addUserButton.Text = "Add New User";
-            this.addUserButton.UseVisualStyleBackColor = false;
-            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
+            this.addAdminButton.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.addAdminButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addAdminButton.Location = new System.Drawing.Point(786, 79);
+            this.addAdminButton.Margin = new System.Windows.Forms.Padding(4);
+            this.addAdminButton.Name = "addAdminButton";
+            this.addAdminButton.Size = new System.Drawing.Size(161, 57);
+            this.addAdminButton.TabIndex = 11;
+            this.addAdminButton.Text = "Add New Admin";
+            this.addAdminButton.UseVisualStyleBackColor = false;
+            this.addAdminButton.Click += new System.EventHandler(this.addAdminButton_Click);
             // 
             // deleteCarButton
             // 
@@ -221,14 +222,27 @@
             // 
             this.refreshButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.refreshButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.refreshButton.Location = new System.Drawing.Point(1020, 13);
+            this.refreshButton.Location = new System.Drawing.Point(910, 11);
             this.refreshButton.Margin = new System.Windows.Forms.Padding(4);
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(91, 33);
+            this.refreshButton.Size = new System.Drawing.Size(101, 33);
             this.refreshButton.TabIndex = 11;
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = false;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
+            // 
+            // logout_panel_button
+            // 
+            this.logout_panel_button.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.logout_panel_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout_panel_button.Location = new System.Drawing.Point(1018, 11);
+            this.logout_panel_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.logout_panel_button.Name = "logout_panel_button";
+            this.logout_panel_button.Size = new System.Drawing.Size(101, 33);
+            this.logout_panel_button.TabIndex = 19;
+            this.logout_panel_button.Text = "Log Out";
+            this.logout_panel_button.UseVisualStyleBackColor = false;
+            this.logout_panel_button.Click += new System.EventHandler(this.logout_panel_button_Click);
             // 
             // AdminPanel
             // 
@@ -236,6 +250,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1131, 602);
+            this.Controls.Add(this.logout_panel_button);
             this.Controls.Add(this.userTable);
             this.Controls.Add(this.selectModelLabel);
             this.Controls.Add(this.label1);
@@ -244,7 +259,7 @@
             this.Controls.Add(this.deleteCarButton);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.deleteUserButton);
-            this.Controls.Add(this.addUserButton);
+            this.Controls.Add(this.addAdminButton);
             this.Controls.Add(this.addCarButton);
             this.Controls.Add(this.showCarsButton);
             this.Controls.Add(this.modelCombobox);
@@ -255,7 +270,7 @@
             this.MaximizeBox = false;
             this.Name = "AdminPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminPanel";
+            this.Text = "car$.com";
             this.Load += new System.EventHandler(this.AdminPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsTable)).EndInit();
@@ -278,9 +293,10 @@
         private System.Windows.Forms.DataGridView userTable;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button addCarButton;
-        private System.Windows.Forms.Button addUserButton;
+        private System.Windows.Forms.Button addAdminButton;
         private System.Windows.Forms.Button deleteCarButton;
         private System.Windows.Forms.Button deleteUserButton;
         private System.Windows.Forms.Button refreshButton;
+        private System.Windows.Forms.Button logout_panel_button;
     }
 }

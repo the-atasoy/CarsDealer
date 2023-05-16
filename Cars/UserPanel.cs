@@ -22,8 +22,6 @@ namespace Cars
 
         private void UserPanel_Load(object sender, EventArgs e)
         {
-            showCarsButton.Enabled = false;
-
             LoadMakes();
         }
 
@@ -41,6 +39,8 @@ namespace Cars
                 {
                     makeCombobox.Items.Add(reader["make"].ToString());
                 }
+
+                reader.Close();
             }
             catch (Exception ex)
             {
@@ -52,13 +52,10 @@ namespace Cars
             }
         }
 
-        private void makeCombobox_SelectedIndexChanged(object sender, EventArgs e)
+        private void LoadModels(string selectedMake)
         {
             modelCombobox.Items.Clear();
             modelCombobox.Text = "Select Model";
-            showCarsButton.Enabled = false;
-
-            string selectedMake = makeCombobox.SelectedItem.ToString();
 
             string query = "SELECT DISTINCT model FROM cars WHERE make=@make ORDER BY model ASC";
             SqlCommand cmd = new SqlCommand(query, conn);
@@ -74,7 +71,7 @@ namespace Cars
                     modelCombobox.Items.Add(reader["model"].ToString());
                 }
 
-                showCarsButton.Enabled = true;
+                reader.Close();
             }
             catch (Exception ex)
             {
@@ -86,14 +83,26 @@ namespace Cars
             }
         }
 
-        private void showCarsButton_Click(object sender, EventArgs e)
+        private void makeCombobox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedMake = makeCombobox.SelectedItem.ToString();
+            LoadModels(selectedMake);
+        }
+
+        private void showCarsButton_Click(object sender, EventArgs e)
+        {
+            string selectedMake = makeCombobox.SelectedItem != null ? makeCombobox.SelectedItem.ToString() : "";
             string selectedModel = modelCombobox.SelectedItem != null ? modelCombobox.SelectedItem.ToString() : "";
 
             string query;
             SqlCommand cmd;
-            if (string.IsNullOrEmpty(selectedModel))
+
+            if (string.IsNullOrEmpty(selectedMake) && string.IsNullOrEmpty(selectedModel))
+            {
+                query = "SELECT make, model, year, version, color, CONCAT(km, ' km') as km, CONCAT(cylinder_capacity, ' cc') as cylinder_capacity, CONCAT(hp, ' hp') as hp, CONCAT(price, ' $') as price FROM cars ORDER BY make ASC, model ASC";
+                cmd = new SqlCommand(query, conn);
+            }
+            else if (string.IsNullOrEmpty(selectedModel))
             {
                 query = "SELECT make, model, year, version, color, CONCAT(km, ' km') as km, CONCAT(cylinder_capacity, ' cc') as cylinder_capacity, CONCAT(hp, ' hp') as hp, CONCAT(price, ' $') as price FROM cars WHERE make=@make ORDER BY make ASC, model ASC";
                 cmd = new SqlCommand(query, conn);
@@ -116,7 +125,6 @@ namespace Cars
                 carsTable.DataSource = dataTable;
                 carsTable.ReadOnly = true;
 
-                // Set column widths
                 carsTable.Columns["make"].Width = 100;
                 carsTable.Columns["model"].Width = 100;
                 carsTable.Columns["year"].Width = 60;
@@ -127,7 +135,6 @@ namespace Cars
                 carsTable.Columns["hp"].Width = 80;
                 carsTable.Columns["price"].Width = 80;
 
-                // Set column headers
                 carsTable.Columns["make"].HeaderText = "Make";
                 carsTable.Columns["model"].HeaderText = "Model";
                 carsTable.Columns["year"].HeaderText = "Year";
@@ -137,6 +144,8 @@ namespace Cars
                 carsTable.Columns["cylinder_capacity"].HeaderText = "Cylinder Capacity";
                 carsTable.Columns["hp"].HeaderText = "Horsepower";
                 carsTable.Columns["price"].HeaderText = "Price";
+
+                reader.Close();
             }
             catch (Exception ex)
             {
