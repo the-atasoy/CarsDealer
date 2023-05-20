@@ -9,7 +9,6 @@ namespace Cars
         public AddCarPanel()
         {
             InitializeComponent();
-            this.FormClosing += AddCarPanel_FormClosing;
         }
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
@@ -84,11 +83,6 @@ namespace Cars
             ccTextbox.Clear();
             hpTextbox.Clear();
             priceTextbox.Clear();
-        }
-
-        private void AddCarPanel_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Environment.Exit(0);
         }
     }
 }
