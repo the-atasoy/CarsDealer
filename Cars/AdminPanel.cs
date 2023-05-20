@@ -312,7 +312,6 @@ namespace Cars
         private void refreshButton_Click(object sender, EventArgs e)
         {
             AdminPanel adminPanel = new AdminPanel();
-            this.Hide();
             adminPanel.ShowDialog();
             
         }
