@@ -9,6 +9,7 @@ namespace Cars
     {
         public RegisterPanel()
         {
+            this.FormClosing += RegisterPanel_FormClosing;
             InitializeComponent();
         }
 
@@ -126,6 +127,11 @@ namespace Cars
             LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
             this.Hide();
+        }
+
+        private void RegisterPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

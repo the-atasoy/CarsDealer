@@ -47,10 +47,9 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(245, 284);
-            this.usernameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.usernameLabel.Location = new System.Drawing.Point(184, 231);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(159, 31);
+            this.usernameLabel.Size = new System.Drawing.Size(125, 25);
             this.usernameLabel.TabIndex = 0;
             this.usernameLabel.Text = "User Name:";
             // 
@@ -58,10 +57,9 @@
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(263, 348);
-            this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.passwordLabel.Location = new System.Drawing.Point(197, 283);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(142, 31);
+            this.passwordLabel.Size = new System.Drawing.Size(112, 25);
             this.passwordLabel.TabIndex = 0;
             this.passwordLabel.Text = "Password:";
             // 
@@ -69,33 +67,30 @@
             // 
             this.usernameTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextbox.Location = new System.Drawing.Point(439, 292);
-            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.usernameTextbox.Location = new System.Drawing.Point(329, 237);
             this.usernameTextbox.MaxLength = 15;
             this.usernameTextbox.Name = "usernameTextbox";
-            this.usernameTextbox.Size = new System.Drawing.Size(297, 29);
+            this.usernameTextbox.Size = new System.Drawing.Size(224, 24);
             this.usernameTextbox.TabIndex = 1;
             // 
             // passwordTextbox
             // 
             this.passwordTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextbox.Location = new System.Drawing.Point(439, 354);
-            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordTextbox.Location = new System.Drawing.Point(329, 288);
             this.passwordTextbox.MaxLength = 20;
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '*';
-            this.passwordTextbox.Size = new System.Drawing.Size(225, 29);
+            this.passwordTextbox.Size = new System.Drawing.Size(170, 24);
             this.passwordTextbox.TabIndex = 2;
             // 
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(439, 417);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(4);
+            this.loginButton.Location = new System.Drawing.Point(329, 339);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(299, 36);
+            this.loginButton.Size = new System.Drawing.Size(224, 29);
             this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
@@ -105,10 +100,9 @@
             // 
             this.registerButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.registerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerButton.Location = new System.Drawing.Point(619, 526);
-            this.registerButton.Margin = new System.Windows.Forms.Padding(4);
+            this.registerButton.Location = new System.Drawing.Point(464, 427);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(119, 36);
+            this.registerButton.Size = new System.Drawing.Size(89, 29);
             this.registerButton.TabIndex = 5;
             this.registerButton.Text = "Register";
             this.registerButton.UseVisualStyleBackColor = false;
@@ -118,20 +112,18 @@
             // 
             this.registerLabel.AutoSize = true;
             this.registerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerLabel.Location = new System.Drawing.Point(435, 534);
-            this.registerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.registerLabel.Location = new System.Drawing.Point(326, 434);
             this.registerLabel.Name = "registerLabel";
-            this.registerLabel.Size = new System.Drawing.Size(168, 20);
+            this.registerLabel.Size = new System.Drawing.Size(132, 16);
             this.registerLabel.TabIndex = 4;
             this.registerLabel.Text = "Don\'t Have Account?";
             // 
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(439, 102);
-            this.logo.Margin = new System.Windows.Forms.Padding(4);
+            this.logo.Location = new System.Drawing.Point(329, 83);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(299, 160);
+            this.logo.Size = new System.Drawing.Size(224, 130);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 5;
             this.logo.TabStop = false;
@@ -140,20 +132,18 @@
             // 
             this.carsLabel.AutoSize = true;
             this.carsLabel.Font = new System.Drawing.Font("Magneto", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsLabel.Location = new System.Drawing.Point(421, 11);
-            this.carsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carsLabel.Location = new System.Drawing.Point(316, 9);
             this.carsLabel.Name = "carsLabel";
-            this.carsLabel.Size = new System.Drawing.Size(333, 73);
+            this.carsLabel.Size = new System.Drawing.Size(266, 58);
             this.carsLabel.TabIndex = 0;
             this.carsLabel.Text = "car$.com";
             // 
             // showCheckbox
             // 
             this.showCheckbox.AutoSize = true;
-            this.showCheckbox.Location = new System.Drawing.Point(677, 359);
-            this.showCheckbox.Margin = new System.Windows.Forms.Padding(4);
+            this.showCheckbox.Location = new System.Drawing.Point(508, 292);
             this.showCheckbox.Name = "showCheckbox";
-            this.showCheckbox.Size = new System.Drawing.Size(62, 20);
+            this.showCheckbox.Size = new System.Drawing.Size(53, 17);
             this.showCheckbox.TabIndex = 3;
             this.showCheckbox.Text = "Show";
             this.showCheckbox.UseVisualStyleBackColor = true;
@@ -164,18 +154,19 @@
             this.error_label.AutoSize = true;
             this.error_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.error_label.ForeColor = System.Drawing.Color.Red;
-            this.error_label.Location = new System.Drawing.Point(451, 471);
+            this.error_label.Location = new System.Drawing.Point(328, 382);
+            this.error_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.error_label.Name = "error_label";
-            this.error_label.Size = new System.Drawing.Size(0, 20);
+            this.error_label.Size = new System.Drawing.Size(0, 17);
             this.error_label.TabIndex = 18;
             // 
             // LoginPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1133, 599);
+            this.ClientSize = new System.Drawing.Size(850, 487);
             this.Controls.Add(this.error_label);
             this.Controls.Add(this.showCheckbox);
             this.Controls.Add(this.logo);
@@ -188,7 +179,6 @@
             this.Controls.Add(this.carsLabel);
             this.Controls.Add(this.usernameLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "LoginPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

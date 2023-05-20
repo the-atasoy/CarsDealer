@@ -10,6 +10,7 @@ namespace Cars
         public AddAdminPanel()
         {
             InitializeComponent();
+            this.FormClosing += AddAdminPanel_FormClosing;
         }
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
@@ -77,5 +78,11 @@ namespace Cars
             phonenumberTextbox.Clear();
             passwordTextbox.Clear();
         }
+
+        private void AddAdminPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
     }
 }

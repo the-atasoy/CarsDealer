@@ -7,14 +7,13 @@ namespace Cars
 {
     public partial class AdminPanel : Form
     {
-        private SqlConnection conn;
-
         public AdminPanel()
         {
             InitializeComponent();
-
-            conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
+            this.FormClosing += AdminPanel_FormClosing;
         }
+
+        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
 
         private void AdminPanel_Load(object sender, EventArgs e)
         {
@@ -233,8 +232,6 @@ namespace Cars
             }
         }
 
-
-
         private void DeleteUser(string username)
         {
             string query = "DELETE FROM users WHERE username=@username";
@@ -299,8 +296,8 @@ namespace Cars
 
         private void addAdminButton_Click(object sender, EventArgs e)
         {
-            AddAdminPanel addUserPanel = new AddAdminPanel();
-            addUserPanel.ShowDialog();
+            AddAdminPanel addAdminPanel = new AddAdminPanel();
+            addAdminPanel.ShowDialog();
         }
 
         private void addCarButton_Click(object sender, EventArgs e)
@@ -311,16 +308,22 @@ namespace Cars
 
         private void refreshButton_Click(object sender, EventArgs e)
         {
-            AdminPanel adminPanel = new AdminPanel();
-            adminPanel.ShowDialog();
-            
+            LoadMakes();
+            userTable.DataSource = null;
+            userTable.Rows.Clear();
+            LoadUsers();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
             LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void AdminPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

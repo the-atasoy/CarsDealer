@@ -9,6 +9,7 @@ namespace Cars
         public LoginPanel()
         {
             InitializeComponent();
+            this.FormClosing += LoginPanel_FormClosing;
         }
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
@@ -65,6 +66,11 @@ namespace Cars
             {
                 passwordTextbox.PasswordChar = '*';
             }
+        }
+
+        private void LoginPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

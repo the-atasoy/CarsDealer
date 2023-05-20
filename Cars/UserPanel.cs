@@ -10,6 +10,7 @@ namespace Cars
         public UserPanel()
         {
             InitializeComponent();
+            this.FormClosing += UserPanel_FormClosing;
         }
 
         SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
@@ -156,6 +157,11 @@ namespace Cars
             LoginPanel loginPanel = new LoginPanel();
             loginPanel.Show();
             this.Hide();
+        }
+
+        private void UserPanel_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
