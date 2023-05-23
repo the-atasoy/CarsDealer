@@ -46,10 +46,9 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(13, 13);
-            this.logo.Margin = new System.Windows.Forms.Padding(4);
+            this.logo.Location = new System.Drawing.Point(10, 11);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(107, 69);
+            this.logo.Size = new System.Drawing.Size(80, 56);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 11;
             this.logo.TabStop = false;
@@ -58,20 +57,20 @@
             // 
             this.carsLabel.AutoSize = true;
             this.carsLabel.Font = new System.Drawing.Font("Magneto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsLabel.Location = new System.Drawing.Point(128, 34);
-            this.carsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.carsLabel.Location = new System.Drawing.Point(96, 28);
             this.carsLabel.Name = "carsLabel";
-            this.carsLabel.Size = new System.Drawing.Size(99, 22);
+            this.carsLabel.Size = new System.Drawing.Size(105, 19);
             this.carsLabel.TabIndex = 10;
-            this.carsLabel.Text = "car$.com";
+            this.carsLabel.Text = "Car$Dealer";
             // 
             // phonenumberLabel
             // 
             this.phonenumberLabel.AutoSize = true;
             this.phonenumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phonenumberLabel.Location = new System.Drawing.Point(243, 99);
+            this.phonenumberLabel.Location = new System.Drawing.Point(182, 80);
+            this.phonenumberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phonenumberLabel.Name = "phonenumberLabel";
-            this.phonenumberLabel.Size = new System.Drawing.Size(135, 22);
+            this.phonenumberLabel.Size = new System.Drawing.Size(112, 18);
             this.phonenumberLabel.TabIndex = 16;
             this.phonenumberLabel.Text = "Phone Number:";
             // 
@@ -79,9 +78,10 @@
             // 
             this.emailLabel.AutoSize = true;
             this.emailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLabel.Location = new System.Drawing.Point(11, 188);
+            this.emailLabel.Location = new System.Drawing.Point(8, 153);
+            this.emailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(59, 22);
+            this.emailLabel.Size = new System.Drawing.Size(49, 18);
             this.emailLabel.TabIndex = 17;
             this.emailLabel.Text = "Email:";
             // 
@@ -89,9 +89,10 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(11, 99);
+            this.usernameLabel.Location = new System.Drawing.Point(8, 80);
+            this.usernameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(97, 22);
+            this.usernameLabel.Size = new System.Drawing.Size(81, 18);
             this.usernameLabel.TabIndex = 18;
             this.usernameLabel.Text = "Username:";
             // 
@@ -99,49 +100,54 @@
             // 
             this.phonenumberTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.phonenumberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phonenumberTextbox.Location = new System.Drawing.Point(245, 130);
+            this.phonenumberTextbox.Location = new System.Drawing.Point(184, 106);
+            this.phonenumberTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phonenumberTextbox.MaxLength = 10;
             this.phonenumberTextbox.Name = "phonenumberTextbox";
-            this.phonenumberTextbox.Size = new System.Drawing.Size(167, 28);
+            this.phonenumberTextbox.Size = new System.Drawing.Size(126, 24);
             this.phonenumberTextbox.TabIndex = 2;
             // 
             // emailTextbox
             // 
             this.emailTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.emailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextbox.Location = new System.Drawing.Point(13, 221);
+            this.emailTextbox.Location = new System.Drawing.Point(10, 180);
+            this.emailTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.emailTextbox.MaxLength = 50;
             this.emailTextbox.Name = "emailTextbox";
-            this.emailTextbox.Size = new System.Drawing.Size(167, 28);
+            this.emailTextbox.Size = new System.Drawing.Size(126, 24);
             this.emailTextbox.TabIndex = 1;
             // 
             // usernameTextbox
             // 
             this.usernameTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.usernameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextbox.Location = new System.Drawing.Point(13, 130);
+            this.usernameTextbox.Location = new System.Drawing.Point(10, 106);
+            this.usernameTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usernameTextbox.MaxLength = 16;
             this.usernameTextbox.Name = "usernameTextbox";
-            this.usernameTextbox.Size = new System.Drawing.Size(167, 28);
+            this.usernameTextbox.Size = new System.Drawing.Size(126, 24);
             this.usernameTextbox.TabIndex = 0;
             // 
             // passwordTextbox
             // 
             this.passwordTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.passwordTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextbox.Location = new System.Drawing.Point(247, 221);
+            this.passwordTextbox.Location = new System.Drawing.Point(185, 180);
+            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordTextbox.MaxLength = 30;
             this.passwordTextbox.Name = "passwordTextbox";
-            this.passwordTextbox.Size = new System.Drawing.Size(167, 28);
+            this.passwordTextbox.Size = new System.Drawing.Size(126, 24);
             this.passwordTextbox.TabIndex = 3;
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordLabel.Location = new System.Drawing.Point(245, 190);
+            this.passwordLabel.Location = new System.Drawing.Point(184, 154);
+            this.passwordLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(94, 22);
+            this.passwordLabel.Size = new System.Drawing.Size(79, 18);
             this.passwordLabel.TabIndex = 16;
             this.passwordLabel.Text = "Password:";
             // 
@@ -149,9 +155,10 @@
             // 
             this.addUserButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.addUserButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addUserButton.Location = new System.Drawing.Point(171, 282);
+            this.addUserButton.Location = new System.Drawing.Point(128, 229);
+            this.addUserButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addUserButton.Name = "addUserButton";
-            this.addUserButton.Size = new System.Drawing.Size(89, 66);
+            this.addUserButton.Size = new System.Drawing.Size(67, 54);
             this.addUserButton.TabIndex = 4;
             this.addUserButton.Text = "Add Admin";
             this.addUserButton.UseVisualStyleBackColor = false;
@@ -159,10 +166,10 @@
             // 
             // AddAdminPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(426, 374);
+            this.ClientSize = new System.Drawing.Size(320, 304);
             this.Controls.Add(this.addUserButton);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.phonenumberLabel);
@@ -175,6 +182,7 @@
             this.Controls.Add(this.logo);
             this.Controls.Add(this.carsLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "AddAdminPanel";
             this.Text = "Add New Admin";

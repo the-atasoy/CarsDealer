@@ -56,10 +56,9 @@
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(13, 13);
-            this.logo.Margin = new System.Windows.Forms.Padding(4);
+            this.logo.Location = new System.Drawing.Point(10, 11);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(107, 69);
+            this.logo.Size = new System.Drawing.Size(80, 56);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 9;
             this.logo.TabStop = false;
@@ -68,110 +67,119 @@
             // 
             this.cars_label.AutoSize = true;
             this.cars_label.Font = new System.Drawing.Font("Magneto", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cars_label.Location = new System.Drawing.Point(128, 34);
-            this.cars_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.cars_label.Location = new System.Drawing.Point(96, 28);
             this.cars_label.Name = "cars_label";
-            this.cars_label.Size = new System.Drawing.Size(99, 22);
+            this.cars_label.Size = new System.Drawing.Size(105, 19);
             this.cars_label.TabIndex = 8;
-            this.cars_label.Text = "car$.com";
+            this.cars_label.Text = "Car$Dealer";
             // 
             // makeTextbox
             // 
             this.makeTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.makeTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.makeTextbox.Location = new System.Drawing.Point(12, 117);
+            this.makeTextbox.Location = new System.Drawing.Point(9, 95);
+            this.makeTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.makeTextbox.MaxLength = 20;
             this.makeTextbox.Name = "makeTextbox";
-            this.makeTextbox.Size = new System.Drawing.Size(167, 28);
+            this.makeTextbox.Size = new System.Drawing.Size(126, 24);
             this.makeTextbox.TabIndex = 0;
             // 
             // modelTextbox
             // 
             this.modelTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.modelTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modelTextbox.Location = new System.Drawing.Point(12, 208);
+            this.modelTextbox.Location = new System.Drawing.Point(9, 169);
+            this.modelTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modelTextbox.MaxLength = 60;
             this.modelTextbox.Name = "modelTextbox";
-            this.modelTextbox.Size = new System.Drawing.Size(167, 28);
+            this.modelTextbox.Size = new System.Drawing.Size(126, 24);
             this.modelTextbox.TabIndex = 1;
             // 
             // yearTextbox
             // 
             this.yearTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.yearTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearTextbox.Location = new System.Drawing.Point(12, 304);
+            this.yearTextbox.Location = new System.Drawing.Point(9, 247);
+            this.yearTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.yearTextbox.MaxLength = 4;
             this.yearTextbox.Name = "yearTextbox";
-            this.yearTextbox.Size = new System.Drawing.Size(167, 28);
+            this.yearTextbox.Size = new System.Drawing.Size(126, 24);
             this.yearTextbox.TabIndex = 2;
             // 
             // hpTextbox
             // 
             this.hpTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.hpTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hpTextbox.Location = new System.Drawing.Point(413, 208);
+            this.hpTextbox.Location = new System.Drawing.Point(310, 169);
+            this.hpTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hpTextbox.MaxLength = 4;
             this.hpTextbox.Name = "hpTextbox";
-            this.hpTextbox.Size = new System.Drawing.Size(167, 28);
+            this.hpTextbox.Size = new System.Drawing.Size(126, 24);
             this.hpTextbox.TabIndex = 7;
             // 
             // versionTextbox
             // 
             this.versionTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.versionTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.versionTextbox.Location = new System.Drawing.Point(213, 117);
+            this.versionTextbox.Location = new System.Drawing.Point(160, 95);
+            this.versionTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.versionTextbox.MaxLength = 60;
             this.versionTextbox.Name = "versionTextbox";
-            this.versionTextbox.Size = new System.Drawing.Size(167, 28);
+            this.versionTextbox.Size = new System.Drawing.Size(126, 24);
             this.versionTextbox.TabIndex = 3;
             // 
             // colorTextbox
             // 
             this.colorTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.colorTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorTextbox.Location = new System.Drawing.Point(213, 208);
+            this.colorTextbox.Location = new System.Drawing.Point(160, 169);
+            this.colorTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.colorTextbox.MaxLength = 20;
             this.colorTextbox.Name = "colorTextbox";
-            this.colorTextbox.Size = new System.Drawing.Size(167, 28);
+            this.colorTextbox.Size = new System.Drawing.Size(126, 24);
             this.colorTextbox.TabIndex = 4;
             // 
             // kmTextbox
             // 
             this.kmTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.kmTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kmTextbox.Location = new System.Drawing.Point(213, 304);
+            this.kmTextbox.Location = new System.Drawing.Point(160, 247);
+            this.kmTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kmTextbox.MaxLength = 7;
             this.kmTextbox.Name = "kmTextbox";
-            this.kmTextbox.Size = new System.Drawing.Size(167, 28);
+            this.kmTextbox.Size = new System.Drawing.Size(126, 24);
             this.kmTextbox.TabIndex = 5;
             // 
             // priceTextbox
             // 
             this.priceTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.priceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceTextbox.Location = new System.Drawing.Point(413, 304);
+            this.priceTextbox.Location = new System.Drawing.Point(310, 247);
+            this.priceTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.priceTextbox.MaxLength = 20;
             this.priceTextbox.Name = "priceTextbox";
-            this.priceTextbox.Size = new System.Drawing.Size(167, 28);
+            this.priceTextbox.Size = new System.Drawing.Size(126, 24);
             this.priceTextbox.TabIndex = 8;
             // 
             // ccTextbox
             // 
             this.ccTextbox.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ccTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ccTextbox.Location = new System.Drawing.Point(413, 117);
+            this.ccTextbox.Location = new System.Drawing.Point(310, 95);
+            this.ccTextbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ccTextbox.MaxLength = 5;
             this.ccTextbox.Name = "ccTextbox";
-            this.ccTextbox.Size = new System.Drawing.Size(167, 28);
+            this.ccTextbox.Size = new System.Drawing.Size(126, 24);
             this.ccTextbox.TabIndex = 6;
             // 
             // addCarButton
             // 
             this.addCarButton.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.addCarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCarButton.Location = new System.Drawing.Point(262, 354);
+            this.addCarButton.Location = new System.Drawing.Point(196, 288);
+            this.addCarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addCarButton.Name = "addCarButton";
-            this.addCarButton.Size = new System.Drawing.Size(72, 66);
+            this.addCarButton.Size = new System.Drawing.Size(54, 54);
             this.addCarButton.TabIndex = 9;
             this.addCarButton.Text = "Add Car";
             this.addCarButton.UseVisualStyleBackColor = false;
@@ -181,9 +189,10 @@
             // 
             this.makeLabel.AutoSize = true;
             this.makeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.makeLabel.Location = new System.Drawing.Point(10, 86);
+            this.makeLabel.Location = new System.Drawing.Point(8, 70);
+            this.makeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.makeLabel.Name = "makeLabel";
-            this.makeLabel.Size = new System.Drawing.Size(58, 22);
+            this.makeLabel.Size = new System.Drawing.Size(49, 18);
             this.makeLabel.TabIndex = 12;
             this.makeLabel.Text = "Make:";
             // 
@@ -191,9 +200,10 @@
             // 
             this.modelLabel.AutoSize = true;
             this.modelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modelLabel.Location = new System.Drawing.Point(10, 175);
+            this.modelLabel.Location = new System.Drawing.Point(8, 142);
+            this.modelLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.modelLabel.Name = "modelLabel";
-            this.modelLabel.Size = new System.Drawing.Size(63, 22);
+            this.modelLabel.Size = new System.Drawing.Size(53, 18);
             this.modelLabel.TabIndex = 12;
             this.modelLabel.Text = "Model:";
             // 
@@ -201,9 +211,10 @@
             // 
             this.yearLabel.AutoSize = true;
             this.yearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLabel.Location = new System.Drawing.Point(10, 273);
+            this.yearLabel.Location = new System.Drawing.Point(8, 222);
+            this.yearLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(53, 22);
+            this.yearLabel.Size = new System.Drawing.Size(42, 18);
             this.yearLabel.TabIndex = 12;
             this.yearLabel.Text = "Year:";
             // 
@@ -211,9 +222,10 @@
             // 
             this.versionLabel.AutoSize = true;
             this.versionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.versionLabel.Location = new System.Drawing.Point(211, 86);
+            this.versionLabel.Location = new System.Drawing.Point(158, 70);
+            this.versionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(76, 22);
+            this.versionLabel.Size = new System.Drawing.Size(62, 18);
             this.versionLabel.TabIndex = 12;
             this.versionLabel.Text = "Version:";
             // 
@@ -221,9 +233,10 @@
             // 
             this.colorLabel.AutoSize = true;
             this.colorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorLabel.Location = new System.Drawing.Point(211, 175);
+            this.colorLabel.Location = new System.Drawing.Point(158, 142);
+            this.colorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.colorLabel.Name = "colorLabel";
-            this.colorLabel.Size = new System.Drawing.Size(58, 22);
+            this.colorLabel.Size = new System.Drawing.Size(49, 18);
             this.colorLabel.TabIndex = 12;
             this.colorLabel.Text = "Color:";
             // 
@@ -231,9 +244,10 @@
             // 
             this.kmLabel.AutoSize = true;
             this.kmLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kmLabel.Location = new System.Drawing.Point(211, 273);
+            this.kmLabel.Location = new System.Drawing.Point(158, 222);
+            this.kmLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.kmLabel.Name = "kmLabel";
-            this.kmLabel.Size = new System.Drawing.Size(90, 22);
+            this.kmLabel.Size = new System.Drawing.Size(75, 18);
             this.kmLabel.TabIndex = 12;
             this.kmLabel.Text = "Kilometer:";
             // 
@@ -241,9 +255,10 @@
             // 
             this.ccLabel.AutoSize = true;
             this.ccLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ccLabel.Location = new System.Drawing.Point(412, 86);
+            this.ccLabel.Location = new System.Drawing.Point(309, 70);
+            this.ccLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ccLabel.Name = "ccLabel";
-            this.ccLabel.Size = new System.Drawing.Size(156, 22);
+            this.ccLabel.Size = new System.Drawing.Size(126, 18);
             this.ccLabel.TabIndex = 12;
             this.ccLabel.Text = "Cylinder Capacity:";
             // 
@@ -251,9 +266,10 @@
             // 
             this.hpLabel.AutoSize = true;
             this.hpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hpLabel.Location = new System.Drawing.Point(412, 175);
+            this.hpLabel.Location = new System.Drawing.Point(309, 142);
+            this.hpLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.hpLabel.Name = "hpLabel";
-            this.hpLabel.Size = new System.Drawing.Size(119, 22);
+            this.hpLabel.Size = new System.Drawing.Size(100, 18);
             this.hpLabel.TabIndex = 12;
             this.hpLabel.Text = "Horse Power:";
             // 
@@ -261,18 +277,19 @@
             // 
             this.priceLabel.AutoSize = true;
             this.priceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceLabel.Location = new System.Drawing.Point(412, 273);
+            this.priceLabel.Location = new System.Drawing.Point(309, 222);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(56, 22);
+            this.priceLabel.Size = new System.Drawing.Size(46, 18);
             this.priceLabel.TabIndex = 12;
             this.priceLabel.Text = "Price:";
             // 
             // AddCarPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(593, 431);
+            this.ClientSize = new System.Drawing.Size(445, 350);
             this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.kmLabel);
             this.Controls.Add(this.hpLabel);
@@ -295,6 +312,7 @@
             this.Controls.Add(this.logo);
             this.Controls.Add(this.cars_label);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AddCarPanel";

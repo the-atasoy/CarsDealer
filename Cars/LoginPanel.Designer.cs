@@ -132,11 +132,11 @@
             // 
             this.carsLabel.AutoSize = true;
             this.carsLabel.Font = new System.Drawing.Font("Magneto", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.carsLabel.Location = new System.Drawing.Point(316, 9);
+            this.carsLabel.Location = new System.Drawing.Point(279, 9);
             this.carsLabel.Name = "carsLabel";
-            this.carsLabel.Size = new System.Drawing.Size(266, 58);
+            this.carsLabel.Size = new System.Drawing.Size(330, 58);
             this.carsLabel.TabIndex = 0;
-            this.carsLabel.Text = "car$.com";
+            this.carsLabel.Text = "Car$Dealer";
             // 
             // showCheckbox
             // 
