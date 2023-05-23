@@ -31,3 +31,4 @@ A C# windows form application with SQL Server database which connects car dealer
 * Download repository.
 * Open SSMS, connect to server, rigth click on Databases, click on Import Data-tier Application and import CarsDealer.bacpac which is in project folder you download.
 * Run setup.exe which is located CarsDealerSetup>Debug.
+* You can run application double clicking on it from desktop shortcut or program location.
