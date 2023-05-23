@@ -13,7 +13,7 @@ namespace Cars
             this.FormClosing += AdminPanel_FormClosing;
         }
 
-        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(DatabaseManager.GetConnectionString());
 
         private void AdminPanel_Load(object sender, EventArgs e)
         {

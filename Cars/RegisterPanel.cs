@@ -13,7 +13,7 @@ namespace Cars
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection("Data Source=DESKTOP-7B11AB0;Initial Catalog=cars.com;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(DatabaseManager.GetConnectionString());
 
         private void register_button_Click(object sender, EventArgs e)
         {
