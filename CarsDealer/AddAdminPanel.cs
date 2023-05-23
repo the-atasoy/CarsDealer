@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 
 
-namespace Cars
+namespace CarsDealer
 {
     public partial class AddAdminPanel : Form
     {

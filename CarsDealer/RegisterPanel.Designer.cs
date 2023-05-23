@@ -1,4 +1,4 @@
-﻿namespace Cars
+﻿namespace CarsDealer
 {
     partial class RegisterPanel
     {

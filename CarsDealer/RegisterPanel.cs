@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
 
-namespace Cars
+namespace CarsDealer
 {
     public partial class RegisterPanel : Form
     {

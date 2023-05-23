@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Cars
+namespace CarsDealer
 {
     internal static class Program
     {

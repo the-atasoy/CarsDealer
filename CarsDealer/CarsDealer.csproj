@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{AB6E4FBB-BFE1-4892-B0D6-DE908011EDFA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Cars</RootNamespace>
-    <AssemblyName>Cars</AssemblyName>
+    <RootNamespace>CarsDealer</RootNamespace>
+    <AssemblyName>CarsDealer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -114,6 +114,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RegisterPanel.resx">
       <DependentUpon>RegisterPanel.cs</DependentUpon>
