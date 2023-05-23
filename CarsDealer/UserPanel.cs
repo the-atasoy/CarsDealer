@@ -13,7 +13,7 @@ namespace CarsDealer
             this.FormClosing += UserPanel_FormClosing;
         }
 
-        SqlConnection conn = new SqlConnection(DatabaseManager.GetConnectionString());
+        SqlConnection conn = new SqlConnection("Server = .;Database = CarsDealer; Integrated Security=True");
 
         private void UserPanel_Load(object sender, EventArgs e)
         {

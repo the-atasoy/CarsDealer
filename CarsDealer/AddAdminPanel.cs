@@ -12,7 +12,7 @@ namespace CarsDealer
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(DatabaseManager.GetConnectionString());
+        SqlConnection conn = new SqlConnection("Server = .;Database = CarsDealer; Integrated Security=True");
 
         private void AddUserPanel_Load(object sender, EventArgs e)
         {
